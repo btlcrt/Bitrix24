@@ -1,0 +1,47 @@
+package com.cybertek.utilities;
+
+
+import com.cybertek.pages.activityStreamPage.CalendarEventsPage;
+import com.cybertek.pages.dashboards.DashboardPage;
+import com.cybertek.pages.dashboards.ManageDashboards;
+import com.cybertek.pages.fleet.VehiclesPage;
+import com.cybertek.pages.login_navigation.LoginPage;
+
+public class Pages {
+    private LoginPage loginPage;
+    private CalendarEventsPage calendarEventsPage;
+    private DashboardPage dashboardPage;
+    private ManageDashboards manageDashboards;
+    private VehiclesPage vehiclesPage;
+    public VehiclesPage vehiclesPage() {
+        if (vehiclesPage == null) {
+            vehiclesPage = new VehiclesPage();
+        }
+        return vehiclesPage;
+    }
+
+    public LoginPage loginPage() {
+        if (loginPage == null) {
+            loginPage = new LoginPage();
+        }
+        return loginPage;
+    }
+    public CalendarEventsPage calendarEventsPage() {
+        if (calendarEventsPage == null) {
+            calendarEventsPage = new CalendarEventsPage();
+        }
+        return calendarEventsPage;
+    }
+    public DashboardPage dashboardPage() {
+        if (dashboardPage == null) {
+            dashboardPage = new DashboardPage();
+        }
+        return dashboardPage;
+    }
+    public ManageDashboards manageDashboards() {
+        if (manageDashboards == null) {
+            manageDashboards = new ManageDashboards();
+        }
+        return manageDashboards;
+    }
+}
