@@ -21,7 +21,7 @@ public class TasksPage {
  //span[@id='bx-b-uploadfile-task-form-lifefeed_task_form']
     // //span[contains(text(),'Select document from Bitrix24')]
     //
-    @FindBy (id ="blog-submit-button-save ")
+    @FindBy (xpath ="//button[@id='blog-submit-button-save']")
     @CacheLookup
     public WebElement SendButton;
 

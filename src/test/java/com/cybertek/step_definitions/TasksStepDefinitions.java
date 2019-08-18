@@ -51,7 +51,7 @@ public class TasksStepDefinitions  {
         String date1= dateFormat.format(date);
         String Current_time=date1;
         String Checklist_timeAdded = Driver.getDriver().findElement
-                (By.xpath("//div[@id='sonet_log_day_item_tyjC1BPu']//div[@class='feed-post-time-wrap']")).getText();
+                (By.cssSelector(".feed-time")).getText();
         Assert.assertEquals(Current_time, Checklist_timeAdded);
 
         String verify = Checklist_timeAdded==Current_time ? "Verified, checklist added": "Not verified, checklist not added";
@@ -59,5 +59,5 @@ public class TasksStepDefinitions  {
 
     }
 
-
+// //div[@id='sonet_log_day_item_tyjC1BPu']//div[@class='feed-post-time-wrap']
 }
