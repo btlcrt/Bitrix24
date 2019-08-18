@@ -46,16 +46,17 @@ public class TasksStepDefinitions  {
     @Then("user verifies that file was added")
     public void user_verifies_that_file_was_added() {
         String expected = "created a task";
-        DateFormat dateFormat = new SimpleDateFormat("HH:mm");
+        DateFormat dateFormat = new SimpleDateFormat("HH:mm a"); //a represents pm am relationship with time
         Date date = new Date();
         String date1= dateFormat.format(date);
-        String Current_time=date1;
+        String Current_time_actual="today, "+date1;
+
         String Checklist_timeAdded = Driver.getDriver().findElement
                 (By.cssSelector(".feed-time")).getText();
-        Assert.assertEquals(Current_time, Checklist_timeAdded);
+        Assert.assertEquals(Current_time_actual, Checklist_timeAdded);
 
-        String verify = Checklist_timeAdded==Current_time ? "Verified, checklist added": "Not verified, checklist not added";
-        System.out.println();
+        String verify = Checklist_timeAdded==Current_time_actual ? "Verified, checklist added": "Not verified, checklist not added";
+        System.out.println(verify);
 
     }
 

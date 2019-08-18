@@ -93,7 +93,7 @@ formatter.match({
   "location": "TasksStepDefinitions.user_verifies_that_file_was_added()"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[19:45]\u003e but was:\u003c[today, 07:45 pm]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat com.cybertek.step_definitions.TasksStepDefinitions.user_verifies_that_file_was_added(TasksStepDefinitions.java:55)\r\n\tat ✽.user verifies that file was added(src\\test\\resources\\features\\activity_stream\\activity_stream.feature:12)\r\n",
+  "error_message": "org.junit.ComparisonFailure: expected:\u003ctoday, [19:56 PM]\u003e but was:\u003ctoday, [07:56 pm]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat com.cybertek.step_definitions.TasksStepDefinitions.user_verifies_that_file_was_added(TasksStepDefinitions.java:56)\r\n\tat ✽.user verifies that file was added(src\\test\\resources\\features\\activity_stream\\activity_stream.feature:12)\r\n",
   "status": "failed"
 });
 formatter.step({
