@@ -9,11 +9,16 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 
+import java.util.concurrent.TimeUnit;
+
 public class LoginStepDefinitions {
     Pages pages = new Pages();
     @Given("user is on the landing page")
     public void user_is_on_the_landing_page() {
+        Driver.getDriver().manage().timeouts().implicitlyWait(30 , TimeUnit.SECONDS);
         pages.loginPage().goToLandingPage();
+        pages.loginPage().login("marketing");
+
     }
     @Then("user logs in as a helpdesk")
     public void user_logs_in_as_a_helpdesk() {

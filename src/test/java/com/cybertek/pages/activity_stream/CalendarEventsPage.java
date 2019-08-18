@@ -1,4 +1,4 @@
-package com.cybertek.pages.activityStreamPage;
+package com.cybertek.pages.activity_stream;
 import com.cybertek.utilities.BasePage;
 import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.ConfigurationReader;

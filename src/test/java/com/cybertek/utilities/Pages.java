@@ -1,7 +1,7 @@
 package com.cybertek.utilities;
 
 
-import com.cybertek.pages.activityStreamPage.CalendarEventsPage;
+import com.cybertek.pages.activity_stream.CalendarEventsPage;
 import com.cybertek.pages.dashboards.DashboardPage;
 import com.cybertek.pages.dashboards.ManageDashboards;
 import com.cybertek.pages.fleet.VehiclesPage;

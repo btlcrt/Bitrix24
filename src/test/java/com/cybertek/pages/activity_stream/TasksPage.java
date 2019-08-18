@@ -1,34 +1,37 @@
-package com.cybertek.pages.activityStreamPage;
+package com.cybertek.pages.activity_stream;
 
 import com.cybertek.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
-public class Tasks {
+public class TasksPage {
 
-    @FindBy(xpath = "//span[@id='feed-add-post-form-tab-tasks']//span[contains(text(),'Task')]")
+    @FindBy(css = "span#feed-add-post-form-tab-tasks > span")
     @CacheLookup
     public WebElement tasksElement;
 
-
-    @FindBy(xpath = "//span[@id='bx-b-uploadfile-task-form-lifefeed_task_form']")
+// //span[@id='bx-b-uploadfile-task-form-lifefeed_task_form']
+    @FindBy(css = "#bx-b-uploadfile-task-form-lifefeed_task_form")
     @CacheLookup
     public WebElement uploadFile;
 
-
-    @FindBy(xpath="//div[@id='diskuf-selectdialog-RzwQmDG']//span[@class='wd-fa-add-file-light-title-text diskuf-selector-link'][contains(text(),'Select document from Bitrix24')]")
+ //span[@id='bx-b-uploadfile-task-form-lifefeed_task_form']
+    // //span[contains(text(),'Select document from Bitrix24')]
+    //
+    @FindBy (id ="blog-submit-button-save ")
     @CacheLookup
-    public WebElement SelectDocumentFromBtrix;
+    public WebElement SendButton;
 
-    @FindBy(xpath = "//span[contains(text(),'Sales and marketing')]")
+    @FindBy(css = ".tasks-task-mpf-link")
     @CacheLookup
-    public WebElement salesAndMarketing;
+    public WebElement Checklistbutton;
 
-    @FindBy(xpath = "//a[contains(text(),'Quotes')]")
+    @FindBy(xpath = "//span[@class='task-checklist-form-vpadding']//input[@placeholder='Things to do']")
     @CacheLookup
-    public WebElement quotes;
+    public WebElement checklistTypeMessage;
 
     @FindBy(xpath = "//a[@class='bx-file-dialog-content-link bx-file-dialog-icon bx-file-dialog-icon-file']")
     @CacheLookup
@@ -55,6 +58,6 @@ public class Tasks {
 
 
 
-    public Tasks(){
+    public TasksPage(){
         PageFactory.initElements(Driver.getDriver(), this);}
 }
