@@ -3,6 +3,7 @@ package com.cybertek.step_definitions;
 import com.cybertek.pages.activity_stream.TasksPage;
 import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.Driver;
+import com.cybertek.utilities.TimeAmPmConverter;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -22,7 +23,7 @@ public class TasksStepDefinitions  {
 
     @Then("user goes to task module")
     public void user_goes_to_task_module() {
-    tasks.tasksElement.click();
+    tasks.tasksElement.click();BrowserUtils.waitPlease(3);
 }
 
     @Then("adds things to do")
@@ -45,11 +46,12 @@ public class TasksStepDefinitions  {
 
     @Then("user verifies that file was added")
     public void user_verifies_that_file_was_added() {
-        String expected = "created a task";
+        TimeAmPmConverter time12 = new TimeAmPmConverter();
+
         DateFormat dateFormat = new SimpleDateFormat("HH:mm a"); //a represents pm am relationship with time
         Date date = new Date();
-        String date1= dateFormat.format(date);
-        String Current_time_actual="today, "+date1;
+        String now= dateFormat.format(date);
+        String Current_time_actual="today, "+now;
 
         String Checklist_timeAdded = Driver.getDriver().findElement
                 (By.cssSelector(".feed-time")).getText();
@@ -57,6 +59,9 @@ public class TasksStepDefinitions  {
 
         String verify = Checklist_timeAdded==Current_time_actual ? "Verified, checklist added": "Not verified, checklist not added";
         System.out.println(verify);
+
+        String now1 = new SimpleDateFormat("hh:mm aa").format(new java.util.Date().getTime());
+
 
     }
 

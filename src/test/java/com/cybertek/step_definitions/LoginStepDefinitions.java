@@ -17,7 +17,7 @@ public class LoginStepDefinitions {
     public void user_is_on_the_landing_page() {
         Driver.getDriver().manage().timeouts().implicitlyWait(30 , TimeUnit.SECONDS);
         pages.loginPage().goToLandingPage();
-        pages.loginPage().login("marketing");
+ //       pages.loginPage().login("marketing");
 
     }
     @Then("user logs in as a helpdesk")
