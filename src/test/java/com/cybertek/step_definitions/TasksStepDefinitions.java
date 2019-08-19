@@ -1,10 +1,12 @@
 package com.cybertek.step_definitions;
 
 import com.cybertek.pages.activity_stream.TasksPage;
+import com.cybertek.pages.login_navigation.LoginPage;
 import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.Driver;
 import com.cybertek.utilities.TimeAmPmConverter;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,12 +21,18 @@ import java.util.List;
 
 public class TasksStepDefinitions  {
     TasksPage tasks = new TasksPage();
+    LoginPage loginpage = new LoginPage();
 
 
     @Then("user goes to task module")
     public void user_goes_to_task_module() {
     tasks.tasksElement.click();BrowserUtils.waitPlease(3);
 }
+    @When("{string} logs in")
+    public void logs_in(String role) {
+        loginpage.login(role);
+    }
+
 
     @Then("adds things to do")
     public void adds_things_to_do() {

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.cybertek.runners.CukesRunner" time="99.299" tests="3" errors="2" skipped="0" failures="1">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/betulalaz/Desktop/Jawa-Tim Buchalka/Bitrix24Cucumber/target/test-classes:/Users/betulalaz/Desktop/Jawa-Tim Buchalka/Bitrix24Cucumber/target/classes:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/betulalaz/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/betulalaz/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/betulalaz/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/betulalaz/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/betulalaz/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/betulalaz/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/betulalaz/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/betulalaz/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/betulalaz/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/betulalaz/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/betulalaz/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.1/webdrivermanager-3.6.1.jar:/Users/betulalaz/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/betulalaz/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/betulalaz/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/betulalaz/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/betulalaz/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/betulalaz/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/betulalaz/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/betulalaz/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/betulalaz/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/betulalaz/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/betulalaz/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/betulalaz/.m2/repository/com/github/javafaker/javafaker/0.18/javafaker-0.18.jar:/Users/betulalaz/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/betulalaz/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/betulalaz/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/betulalaz/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.0/log4j-api-2.12.0.jar:/Users/betulalaz/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.0/log4j-core-2.12.0.jar:/Users/betulalaz/.m2/repository/org/slf4j/slf4j-simple/1.7.21/slf4j-simple-1.7.21.jar:/Users/betulalaz/.m2/repository/io/cucumber/cucumber-java/4.2.2/cucumber-java-4.2.2.jar:/Users/betulalaz/.m2/repository/io/cucumber/cucumber-core/4.2.2/cucumber-core-4.2.2.jar:/Users/betulalaz/.m2/repository/io/cucumber/cucumber-html/0.2.7/cucumber-html-0.2.7.jar:/Users/betulalaz/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/Users/betulalaz/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/betulalaz/.m2/repository/io/cucumber/cucumber-expressions/6.2.0/cucumber-expressions-6.2.0.jar:/Users/betulalaz/.m2/repository/io/cucumber/datatable/1.1.12/datatable-1.1.12.jar:/Users/betulalaz/.m2/repository/io/cucumber/datatable-dependencies/1.1.12/datatable-dependencies-1.1.12.jar:/Users/betulalaz/.m2/repository/io/cucumber/cucumber-junit/4.2.2/cucumber-junit-4.2.2.jar:/Users/betulalaz/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/betulalaz/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/betulalaz/.m2/repository/info/cukes/cucumber-java/1.2.0/cucumber-java-1.2.0.jar:/Users/betulalaz/.m2/repository/info/cukes/cucumber-core/1.2.0/cucumber-core-1.2.0.jar:/Users/betulalaz/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/Users/betulalaz/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.3/cucumber-jvm-deps-1.0.3.jar:/Users/betulalaz/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/Users/betulalaz/.m2/repository/info/cukes/cucumber-junit/1.2.2/cucumber-junit-1.2.2.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/betulalaz/Desktop/Jawa-Tim Buchalka/Bitrix24Cucumber/target/surefire/surefirebooter4070913803277389236.jar /Users/betulalaz/Desktop/Jawa-Tim Buchalka/Bitrix24Cucumber/target/surefire 2019-08-19T15-17-53_985-jvmRun1 surefire17822591364118333193tmp surefire_07054361865196666169tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/betulalaz/Desktop/Jawa-Tim Buchalka/Bitrix24Cucumber/target/test-classes:/Users/betulalaz/Desktop/Jawa-Tim Buchalka/Bitrix24Cucumber/target/classes:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/betulalaz/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/betulalaz/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/betulalaz/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/betulalaz/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/betulalaz/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/betulalaz/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/betulalaz/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/betulalaz/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/betulalaz/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/betulalaz/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/betulalaz/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/betulalaz/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.1/webdrivermanager-3.6.1.jar:/Users/betulalaz/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/betulalaz/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/betulalaz/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/betulalaz/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/betulalaz/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/betulalaz/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/betulalaz/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/betulalaz/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/betulalaz/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/betulalaz/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/betulalaz/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/betulalaz/.m2/repository/com/github/javafaker/javafaker/0.18/javafaker-0.18.jar:/Users/betulalaz/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/betulalaz/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/betulalaz/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/betulalaz/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.0/log4j-api-2.12.0.jar:/Users/betulalaz/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.0/log4j-core-2.12.0.jar:/Users/betulalaz/.m2/repository/org/slf4j/slf4j-simple/1.7.21/slf4j-simple-1.7.21.jar:/Users/betulalaz/.m2/repository/io/cucumber/cucumber-java/4.2.2/cucumber-java-4.2.2.jar:/Users/betulalaz/.m2/repository/io/cucumber/cucumber-core/4.2.2/cucumber-core-4.2.2.jar:/Users/betulalaz/.m2/repository/io/cucumber/cucumber-html/0.2.7/cucumber-html-0.2.7.jar:/Users/betulalaz/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/Users/betulalaz/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/betulalaz/.m2/repository/io/cucumber/cucumber-expressions/6.2.0/cucumber-expressions-6.2.0.jar:/Users/betulalaz/.m2/repository/io/cucumber/datatable/1.1.12/datatable-1.1.12.jar:/Users/betulalaz/.m2/repository/io/cucumber/datatable-dependencies/1.1.12/datatable-dependencies-1.1.12.jar:/Users/betulalaz/.m2/repository/io/cucumber/cucumber-junit/4.2.2/cucumber-junit-4.2.2.jar:/Users/betulalaz/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/betulalaz/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/betulalaz/.m2/repository/info/cukes/cucumber-java/1.2.0/cucumber-java-1.2.0.jar:/Users/betulalaz/.m2/repository/info/cukes/cucumber-core/1.2.0/cucumber-core-1.2.0.jar:/Users/betulalaz/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/Users/betulalaz/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.3/cucumber-jvm-deps-1.0.3.jar:/Users/betulalaz/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/Users/betulalaz/.m2/repository/info/cukes/cucumber-junit/1.2.2/cucumber-junit-1.2.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/betulalaz"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2018-10-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/betulalaz/Desktop/Jawa-Tim Buchalka/Bitrix24Cucumber"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/betulalaz/Desktop/Jawa-Tim Buchalka/Bitrix24Cucumber/target/surefire/surefirebooter4070913803277389236.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="11.0.1+13-LTS"/>
+    <property name="user.name" value="betulalaz"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/Users/betulalaz/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/h3/lfyn6h9d2hd4kpt5hsftnvn80000gn/T/"/>
+    <property name="java.version" value="11.0.1"/>
+    <property name="user.dir" value="/Users/betulalaz/Desktop/Jawa-Tim Buchalka/Bitrix24Cucumber"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/betulalaz/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.1+13-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="user can upload a file regarding to new task" classname="As a user I should be able to create a task from activity stream." time="28.068">
+    <failure message="expected:&lt;today, [15:18 PM]&gt; but was:&lt;today, [03:18 pm]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<today, [15:18 PM]> but was:<today, [03:18 pm]>
+]]></failure>
+    <system-out><![CDATA[[@Tasks]
+user can upload a file regarding to new task
+BEFORE
+configuration.properties
+AFTER
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 76.0.3809.68 (since Google Chrome 76 is installed in your machine)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/betulalaz/.m2/repository/webdriver/chromedriver/mac64/76.0.3809.68/chromedriver
+Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 23479
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Aug 19, 2019 3:18:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+ERROR StatusLogger No Log4j 2 configuration file found. Using default configuration (logging only errors to the console), or user programmatically provided configurations. Set system property 'log4j2.debug' to show Log4j 2 internal initialization logging. See https://logging.apache.org/log4j/2.x/manual/configuration.html for instructions on how to configure Log4j 2
+]]></system-err>
+  </testcase>
+  <testcase name="user can upload a file regarding to new task" classname="As a user I should be able to create a task from activity stream." time="35.223">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span#feed-add-post-form-tab-tasks &gt; span&quot;}&#10;  (Session info: chrome=76.0.3809.100)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Betuls-Air.attlocal.net&apos;, ip: &apos;2600:1702:530:29c0:0:0:0:44%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;11.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: /var/folders/h3/lfyn6h9d2hd...}, goog:chromeOptions: {debuggerAddress: localhost:52095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 7c89173c5d6934cbb03fd3b354689fc0&#10;*** Element info: {Using=css selector, value=span#feed-add-post-form-tab-tasks &gt; span}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"span#feed-add-post-form-tab-tasks > span"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Betuls-Air.attlocal.net', ip: '2600:1702:530:29c0:0:0:0:44%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '11.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: /var/folders/h3/lfyn6h9d2hd...}, goog:chromeOptions: {debuggerAddress: localhost:52095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7c89173c5d6934cbb03fd3b354689fc0
+*** Element info: {Using=css selector, value=span#feed-add-post-form-tab-tasks > span}
+</error>
+    <system-out><![CDATA[[@Tasks]
+user can upload a file regarding to new task
+BEFORE
+AFTER
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 76.0.3809.68 (since Google Chrome 76 is installed in your machine)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/betulalaz/.m2/repository/webdriver/chromedriver/mac64/76.0.3809.68/chromedriver
+Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 48174
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Aug 19, 2019 3:18:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="user can upload a file regarding to new task" classname="As a user I should be able to create a task from activity stream." time="34.826">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span#feed-add-post-form-tab-tasks &gt; span&quot;}&#10;  (Session info: chrome=76.0.3809.100)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Betuls-Air.attlocal.net&apos;, ip: &apos;2600:1702:530:29c0:0:0:0:44%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;11.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: /var/folders/h3/lfyn6h9d2hd...}, goog:chromeOptions: {debuggerAddress: localhost:52115}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 913414dc32f77a01e78dd365fb26b2ca&#10;*** Element info: {Using=css selector, value=span#feed-add-post-form-tab-tasks &gt; span}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"span#feed-add-post-form-tab-tasks > span"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Betuls-Air.attlocal.net', ip: '2600:1702:530:29c0:0:0:0:44%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '11.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: /var/folders/h3/lfyn6h9d2hd...}, goog:chromeOptions: {debuggerAddress: localhost:52115}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 913414dc32f77a01e78dd365fb26b2ca
+*** Element info: {Using=css selector, value=span#feed-add-post-form-tab-tasks > span}
+</error>
+    <system-out><![CDATA[[@Tasks]
+user can upload a file regarding to new task
+BEFORE
+AFTER
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 76.0.3809.68 (since Google Chrome 76 is installed in your machine)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/betulalaz/.m2/repository/webdriver/chromedriver/mac64/76.0.3809.68/chromedriver
+Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 41731
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Aug 19, 2019 3:19:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>
