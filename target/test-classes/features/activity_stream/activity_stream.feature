@@ -1,5 +1,5 @@
 
-  @Tasks
+
   Feature: As a user I should be able to create a task from activity stream.
 
     Scenario Outline:  user can upload a file regarding to new task
@@ -13,10 +13,10 @@
       And user verifies that file was added
       Then user quits
       Examples:
-        |  user   |
-        |   hr    |
-        |marketing|
-        |helpdesk |
+        |   user    |
+        |    hr     |
+        | marketing |
+        | helpdesk  |
 
 
 #and image or link or add checklist
